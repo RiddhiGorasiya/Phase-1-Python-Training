@@ -28,13 +28,20 @@ def remove_task():
         except ValueError:
             print("Please enter a valid number.")
 
+# def delete_task(tasks, index):
+#     if 1<= index <= len(tasks):
+#         delete_task = tasks.pop(index-1)
+#         print(f"Task '{delete_task}' deleted successfuly.")
+#     else:
+#         print("Invalid task index.")
 
 def menu():
     while (True):
         print("*** Main Menu ***")
         print("1. Add a new task")
         print("2. View all task")
-        print("3. remove a task")
+        print("3. Remove a task")
+        # print("4. Delete a task")
         print("4. Exit")
 
         choice = input("Enter your choice: ")
@@ -44,6 +51,8 @@ def menu():
             view_task()
         elif choice == "3":
             remove_task()
+        # elif choice == "4":
+            # delete_task()
         elif choice == "4":
             print("Exiting the appliction...")
             exit()
@@ -51,3 +60,13 @@ def menu():
             print("Invalid choice! Try again!!")
 
 menu()
+
+
+# import os 
+
+# def main():
+#     print("*** Main Menu ***")
+#     print("1. View all task")
+#     print("2. Add Tasks")
+#     print("3. Update Tasks")
+#     print("4. Dele")
