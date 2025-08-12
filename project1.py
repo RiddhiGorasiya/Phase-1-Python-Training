@@ -1,51 +1,96 @@
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
-def subtract(a, b):
-    return a - b
+# def subtract(a, b):
+#     return a - b
 
-def multiply(a, b):
-    return a * b
+# def multiply(a, b):
+#     return a * b
 
-def divide(a, b):
-    return a / b
+# def divide(a, b):
+#     return a / b
 
 
-print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
+# print("Select operation.")
+# print("1.Add")
+# print("2.Subtract")
+# print("3.Multiply")
+# print("4.Divide")
 
-while True:
-    # take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+# while True:
+#     # take input from the user
+#     choice = input("Enter choice(1/2/3/4): ")
 
-    # check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
-        try:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            continue
+#     # check if choice is one of the four options
+#     if choice in ('1', '2', '3', '4'):
+#         try:
+#             num1 = float(input("Enter first number: "))
+#             num2 = float(input("Enter second number: "))
+#         except ValueError:
+#             print("Invalid input. Please enter a number.")
+#             continue
 
-        if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2))
+#         if choice == '1':
+#             print(num1, "+", num2, "=", add(num1, num2))
 
-        elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
+#         elif choice == '2':
+#             print(num1, "-", num2, "=", subtract(num1, num2))
 
-        elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2))
+#         elif choice == '3':
+#             print(num1, "*", num2, "=", multiply(num1, num2))
 
-        elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
+#         elif choice == '4':
+#             print(num1, "/", num2, "=", divide(num1, num2))
         
-        # check if user wants another calculation
-        # break the while loop if answer is no
-        next_calculation = input("Let's do next calculation? (yes/no): ")
-        if next_calculation == "no":
-          break
-    else:
-        print("Invalid Input")
+#         # check if user wants another calculation
+#         # break the while loop if answer is no
+#         next_calculation = input("Let's do next calculation? (yes/no): ")
+#         if next_calculation == "no":
+#           break
+#     else:
+#         print("Invalid Input")
+
+
+
+
+
+
+
+def addition(num1, num2):
+  num1 += num2
+  return num1
+def subtraction(num1, num2):
+  num1 -= num2
+  return num1
+def mul(num1, num2):
+  num1 *= num2
+  return num1
+def division(num1, num2):
+  num1 /= num2
+  return num1
+def module(num1, num2):
+  num1 %= num2
+  return num1
+def default(num1, num2):
+  return "Incorrect day"
+switcher = {
+    1: addition,
+    2: subtraction,
+    3: mul,
+    4: division,
+    5: module
+}
+def switch(operation, num1, num2):
+  return switcher.get(operation, default)(num1, num2)
+print('''You can perform operation
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Module ''')
+# Take input from user
+choice = int(input("Select operation from 1,2,3,4 : "))
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+print (switch(choice, num1, num2))
+
