@@ -1,0 +1,19 @@
+Day 1-2: Basics of Python
+● Variables and Data    (https://www.w3schools.com/python/python_variables.asp)(https://www.w3schools.com/python/python_datatypes.asp)
+● Arithmetic and Logical Operators(https://www.w3schools.com/python/python_operators.asp)
+● Conditional Statements (if, elif, else)
+(https://www.w3schools.com/python/python_conditions.asp)
+● Loops (for, while, break, continue)(https://www.youtube.com/watch?v=S73thl0AyFU&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0&index=5)
+
+Day 3-4: Functions and Collections
+● Defining and calling functions(https://www.youtube.com/watch?v=OvTH-7ESoRA&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0&index=6)
+● Parameters, return statements(https://www.geeksforgeeks.org/python/python-return-statement/)
+● List, Tuple, Set, Dictionary - operations and use cases(https://www.youtube.com/watch?v=qVyvmzFxF_o&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0&index=3)
+
+Day 5: File and Error Handling
+● Reading/Writing files (open, read, write, with)(https://www.youtube.com/watch?v=jU0cndZziO0&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0&index=7)
+● Exceptions: try, except, finally, raise(https://www.geeksforgeeks.org/python/python-exception-handling/)
+
+Day 6: Git Basics
+● Installing Git, initializing a(https://git-scm.com/downloads)
+● Commands: init, clone, add, commit, push, pull, branch(https://www.youtube.com/watch?v=Ez8F0nW6S-w)
