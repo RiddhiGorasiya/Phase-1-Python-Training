@@ -35,6 +35,7 @@ def remove_task():
 #     else:
 #         print("Invalid task index.")
 
+
 def menu():
     while (True):
         print("*** Main Menu ***")
@@ -62,11 +63,29 @@ def menu():
 menu()
 
 
-# import os 
+# def task():
+#     tasks = []
+#     print("*****Welcome to the to-do list*****")
 
-# def main():
-#     print("*** Main Menu ***")
-#     print("1. View all task")
-#     print("2. Add Tasks")
-#     print("3. Update Tasks")
-#     print("4. Dele")
+#     total_task = int(input("Enter how manay task you want to add = "))
+#     for i in range(1, total_task):
+#         task_name = input(f"Enter task {i} = ")
+#         tasks.append(task_name)
+
+#     print(f"Today's tasks are\n{tasks}")
+
+#     while True:
+#         operation = int(input("Enter\n1-Add\n2-Updatr\n3-delete\n4-View\n5-Exit/stop/"))
+#         if operation == 1:
+#             add = input("Enter task you want to add = ")
+#             tasks.append(add)
+#             print(f"Task {add} has been successfully added...")
+        
+#         elif operation == 2:
+#             updatrd_val = input("Enter task you want to update = ")
+#             if updatrd_val in tasks:
+#                 up = input("Enter new task = ")
+#                 ind = tasks.index(updatrd_val)
+#                 print(f"Updatrd task {up}")
+
+# task()
