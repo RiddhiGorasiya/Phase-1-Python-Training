@@ -1,2 +1,0 @@
-I want to learn Javascript tomorrow.Then I'll move to ReactJS.
- After that node.js.
